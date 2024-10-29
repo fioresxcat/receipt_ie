@@ -1,0 +1,8 @@
+channels:
+- 64
+- 128
+- 256
+- 512
+num_heads: 8
+attn_dropout: 0
+concat: false

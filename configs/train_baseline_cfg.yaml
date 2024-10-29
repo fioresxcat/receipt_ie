@@ -1,0 +1,35 @@
+data:
+  martname: '711'
+  train_dir: data/711/train
+  val_dir: data/711/val
+  test_dir: data/711/test
+  max_sample: 10000
+
+options:
+  model_type: baseline_mlp
+  use_emb: true
+  more_feature: false
+  sort_bbs: true
+  word_encoder:
+    lang: vi
+    vs: 10000
+    dim: 300
+
+model:
+  dropout_rate: 0.5
+  emb_range: 640
+  emb_dim: 128
+  # text_feature_dim: 314
+
+training:
+  exp_description: exp9_baseline_mlp
+  ckpt_save_dir: ckpt/711/
+  prev_ckpt_path: null
+  base_lr: 1.0e-3
+  weight_decay: 5.0e-4
+  optimizer: AdamW
+  num_epoch: 100
+  use_warmup: false
+  warmup_ratio: 0.05
+  label_smoothing: 0.00
+
