@@ -15,7 +15,7 @@ from imgaug.augmentables import Keypoint, KeypointsOnImage
 import itertools
 import string
 import random
-from fuzzywuzzy import fuzz
+
 
 DATA_DICT = {
     '711': {
