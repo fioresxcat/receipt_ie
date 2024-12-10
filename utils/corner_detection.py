@@ -184,9 +184,9 @@ def main():
 
 
 def warp_image_dir():
-    im_dir = 'raw_data/adtima_data/aeon_glam/raw_images'
-    json_dir = 'raw_data/adtima_data/aeon_glam/corner_jsons'
-    out_dir = 'raw_data/adtima_data/aeon_glam/warped_images'
+    im_dir = 'raw_data/adtima_data/watsons/raw_images'
+    json_dir = 'raw_data/adtima_data/watsons/corner_jsons'
+    out_dir = 'raw_data/adtima_data/watsons/warped_images'
     os.makedirs(out_dir, exist_ok=True)
 
     for ip in Path(im_dir).rglob('*'):
